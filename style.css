@@ -380,6 +380,118 @@ header .fa-xmark {
   padding: 1rem 0;
 }
 
+.review {
+  background: #f9f9f9;
+  border: 1px solid black;
+}
+
+.review .box-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.review .box-container .box {
+  width: 28rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  background: #fff;
+  margin: 4rem 2rem;
+}
+
+.review .box-container .box img {
+  height: 8.5rem;
+  width: 8.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: -4rem;
+  border: 0.6rem solid var(--pink);
+  border-left: 0.6rem solid var(--violet);
+  border-bottom: 0.6rem solid var(--violet);
+}
+
+.review .box-container .box h3 {
+  font-size: 2rem;
+  color: var(--pink);
+  padding: 0 0.5rem;
+}
+
+.review .box-container .box p {
+  font-size: 1.4rem;
+  color: #999;
+  padding: 0 1.3rem;
+}
+
+.review .box-container .box .stars {
+  font-size: 1.6rem;
+  color: var(--violet);
+  padding: 1.3rem 0.1rem;
+}
+
+.contact {
+  background: #999;
+}
+
+.contact .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.contact .row .image img {
+  width: 50vw;
+  height: 70vh;
+}
+
+.contact .row .form-container {
+  width: 50%;
+  padding-right: 6rem;
+}
+
+.contact .row .form-container input,
+textarea {
+  height: 4rem;
+  width: 100%;
+  background: #fff;
+  border: none;
+  border-radius: 5rem;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  color: var(--pink);
+  font-size: 1.7rem;
+  transition: 0.2s linear;
+}
+
+.contact .row .form-container input:focus,
+textarea:focus {
+  border: 0.2rem solid var(--pink);
+}
+
+.contact .row .form-container textarea {
+  height: 20rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  resize: none;
+}
+
+.contact .row .form-container input[type="submit"] {
+  width: 17rem;
+  background: var(--pink);
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: 0.2s;
+}
+
+.contact .row .form-container input[type="submit"]:hover {
+  background: none;
+  color: var(--pink);
+  border: 0.2rem solid var(--pink);
+}
+
 /* media queries */
 @media (max-width: 768px) {
   html {
@@ -433,5 +545,16 @@ header .fa-xmark {
   }
   .course .box-container {
     width: 100%;
+  }
+  .contact .row {
+    flex-flow: column;
+  }
+  .contact .row .image img {
+    height: 50vh;
+    width: 90vw;
+  }
+  .contact .row .form-container {
+    width: 90%;
+    padding: 0;
   }
 }
